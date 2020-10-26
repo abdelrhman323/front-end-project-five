@@ -1,0 +1,575 @@
+body {
+  padding-top: 70px;
+  overflow: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+.lead {
+  font-family: "Droid Sans", sans-serif;
+}
+/* Main Navbar */
+/*** Start Overriding Bootstrap ***/
+.navbar {
+  min-height: 70px;
+}
+/* Navbar Link */
+.navbar-inverse .navbar-nav > li > a {
+  color: #bbb;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 16px;
+}
+
+/* Brand Name */
+
+.navbar-inverse .navbar-brand {
+  color: #bbb;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+/* Dropdown Menu */
+
+.dropdown-menu {
+  background-color: #333;
+  min-width: 200px;
+}
+
+.navbar-right .dropdown-menu {
+  left: 0;
+  right: auto;
+}
+
+.dropdown-menu > li > a {
+  color: #fff;
+  padding: 6px 20px;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  color: #fff;
+  padding-left: 25px;
+}
+
+.dropdown-menu .divider {
+  background-color: #871818;
+}
+
+/* Navbar Toggle */
+
+.navbar-toggle {
+  margin-top: 18px;
+}
+
+.carousel-caption {
+  bottom: 70px;
+  background-color: rgba(3, 3, 3, 0.3);
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.carousel-indicators {
+  bottom: 0;
+}
+.carousel-indicators li {
+  height: 15px;
+  width: 15px;
+  border: 1px solid #eeeeee;
+}
+.carousel-indicators .active {
+  height: 17px;
+  width: 17px;
+  background-color: #e41b17;
+}
+.carousel-inner > .item > img {
+  width: 100%;
+}
+/**** End Bootsrap Overriding ****/
+
+/* Start Tool Box*/
+.option-box {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  z-index: 9999;
+}
+
+.option-box .color-option {
+  float: left;
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  width: 200px;
+  display: none;
+}
+
+.option-box .color-option ul li {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 3px;
+  cursor: pointer;
+}
+.option-box .gear-check {
+  color: white;
+  cursor: pointer;
+}
+/* End Tool Box*/
+
+/* Start Section About*/
+.about {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.about .lead {
+  color: #888888;
+  font-size: 25px;
+  margin-top: 15px;
+}
+.about h1 {
+  font-weight: bold;
+}
+.about h1 span {
+  color: #e41b17;
+}
+/* End Section About*/
+
+/* Start Section Features*/
+.features {
+  background-color: #eeeeee;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.features .h1 {
+  margin-bottom: 50px;
+}
+.features .feat {
+  margin-bottom: 30px;
+}
+.features .feat p {
+  line-height: 2em;
+}
+.features .feat span.glyphicon {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #666;
+}
+/* End Section Features*/
+
+/* Start Section testmonals*/
+.testimonials {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.testimonials .h1 {
+  font-weight: bold;
+}
+.testimonials .lead {
+  line-height: 2em;
+  margin-top: 10px;
+}
+.testimonials span {
+  font-size: 18px;
+  font-weight: bold;
+}
+.testimonials .carousel-inner {
+  line-height: 100px;
+}
+.testimonials .carousel-indicators {
+  position: static;
+  width: 100%;
+  margin-left: auto;
+}
+.testimonials .carousel-indicators li {
+  text-indent: 0;
+  width: 80px;
+  height: 80px;
+  opacity: 0.4;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 5px;
+  -webkit-transition: all 0.5 ease;
+  -moz-transition: all 0.5 ease;
+  -o-transition: all 0.5 ease;
+  transition: all 0.5 ease;
+}
+
+.testimonials .carousel-indicators li.active {
+  width: 80px;
+  height: 80px;
+  opacity: 1;
+  background: none;
+}
+/* End Section testmonals*/
+
+/* Start Section Price Table */
+
+.price_table {
+  background: rgb(196, 194, 194);
+}
+
+.price_table .price_box {
+  background: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+.price_table .price_box:hover p {
+  -webkit-transform: scale(1.1, 1.1) rotate(360deg);
+  -moz-transform: scale(1.1, 1.1) rotate(360deg);
+  -o-transform: scale(1.1, 1.1) rotate(360deg);
+  transform: scale(1.1, 1.1) rotate(360deg);
+  border: 2px solid #dfdfdf;
+}
+.price_table .price_box p {
+  font-size: 35px;
+  font-weight: bold;
+  color: #666;
+  width: 100px;
+  height: 100px;
+  background: #f3f3f3;
+  border-radius: 50%;
+  line-height: 100px;
+  border: 2px solid #fff;
+  -webkit-transition-duration: 0.7s;
+  -moz-transition-duration: 0.7s;
+  -o-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+}
+.price_table .price_box ul {
+  line-height: 250%;
+  font-size: 18px;
+}
+.price_table .price_box a {
+  margin-bottom: 5px;
+}
+/* End Section Price Table */
+
+/* Start Section Our Team */
+.our-team {
+  background: url("images/team.jpg") no-repeat center center fixed;
+  min-height: 600px;
+}
+.our-team .team {
+  background-color: rgba(2, 2, 2, 0.7);
+  color: white;
+  min-height: 600px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.our-team .h1 {
+  margin-bottom: 60px;
+}
+.our-team .person {
+  margin-bottom: 50px;
+}
+
+/* End Section Our Team */
+
+/* Start Section Subscribe */
+
+.subscribe {
+  background: #eee;
+  padding-bottom: 50px;
+}
+
+.subscribe .h1 {
+  color: #888;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.subscribe p {
+  margin-bottom: 30px;
+}
+
+.subscribe .form-control {
+  border-radius: 0;
+  margin-right: -5px;
+  width: 300px;
+}
+
+.subscribe button {
+  border-radius: 0;
+}
+
+/* End Section Subscribe */
+
+/* Start Section Statistics */
+.statistics {
+  background: url(images/stats.jpg) no-repeat center center fixed;
+  min-height: 300px;
+}
+.statistics .data {
+  background-color: rgba(2, 2, 2, 0.7);
+  color: #b6b5b5;
+  min-height: 300px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.statistics .stat {
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  margin-bottom: 30px;
+}
+.statistics .stat:hover {
+  color: white;
+}
+.statistics .h1 {
+  padding-bottom: 40px;
+}
+.statistics p {
+  font-size: 60px;
+  font-weight: 800;
+}
+.statistics span {
+  font-size: 18px;
+}
+/* End Section Statistics */
+
+/* Start Section Our Skills */
+.our-skills {
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+.our-skills .h1 {
+  margin-bottom: 60px;
+}
+.our-skills h3 {
+  font-weight: bold;
+  margin-top: 0;
+}
+.our-skills .progress {
+  height: 36px;
+}
+.our-skills .progress-bar {
+  line-height: 36px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: left;
+  text-indent: 10px;
+}
+/* End Section Our Skills */
+
+/* Start Section Contact-Us */
+.contact-us {
+  background: url(images/contact-us.jpg) no-repeat center center fixed;
+  min-height: 300px;
+}
+.contact-us .fields {
+  background-color: rgba(9, 9, 9, 0.7);
+  min-height: 300px;
+  color: #ddd;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.contact-us p {
+  margin-bottom: 40px;
+}
+.contact-us textarea {
+  height: 108px;
+}
+.contact-us input[type="text"],
+.contact-us textarea {
+  background: rgba(82, 78, 78, 0.5);
+  color: #fff;
+  border: none;
+}
+/* End Section Contact-Us */
+
+/* Start Section Client */
+.clients {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #eee;
+}
+.clients img {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.clients img:hover {
+  opacity: 1;
+}
+/* End Section Client */
+
+/* Start Section Footer */
+.footer {
+  background: #111;
+  color: #aaa;
+  padding-top: 10px;
+}
+
+.footer h3 {
+  letter-spacing: 1px;
+  margin: 30px 0 20px;
+}
+
+.footer a {
+  color: #aaa;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.footer .three-columns {
+  overflow: hidden;
+}
+
+.footer .three-columns li {
+  width: 33.3333%;
+  float: left;
+  padding: 10px 0;
+}
+
+.footer .social-list {
+  overflow: hidden;
+  margin: 20px 0 10px;
+}
+.footer .social-list li {
+  float: left;
+  margin-right: 6px;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.footer .social-list li:hover {
+  opacity: 1;
+}
+.footer .media .media-body {
+  margin-bottom: 20px;
+}
+.footer .img-thumbnail {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid #666;
+  margin-bottom: 5px;
+}
+.footer .copyright {
+  background: rgb(88, 87, 87);
+  color: rgb(41, 39, 39);
+  padding: 15px 0;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+/* End Section Footer */
+
+/* Start Loading-Overlay*/
+.loading-overlay {
+  background: #222;
+  color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  margin: 300px auto;
+}
+
+.double-bounce1,
+.double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: bounce 2s infinite ease-in-out;
+  animation: bounce 2s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+
+@-webkit-keyframes bounce {
+  0%,
+  100% {
+    -webkit-transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+
+/* End Section Loading */
+
+/*Start Scroll To Top*/
+.scroll-top {
+  width: 50px;
+  text-align: center;
+  color: #ddd;
+  background-color: #272727;
+  position: fixed;
+  z-index: 9999;
+  bottom: 10px;
+  right: 15px;
+  display: none;
+}
+.scroll-top:hover {
+  background-color: #777777;
+  cursor: pointer;
+}
+/*End Scroll To Top*/
+/* Start Our Grouping */
+.our-team,
+.statistics,
+.contact-us {
+  background: url(images/contact-us.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* End Our Grouping */
+
+/* Mobile and Tablets Screen*/
+@media (max-width: 767px) {
+  .navbar-inverse .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .subscribe .form-control {
+    margin: 20px auto;
+    width: 400px;
+  }
+  .navbar-fixed-top .navbar-collapse,
+  .navbar-fixed-bottom .navbar-collapse {
+    max-height: none;
+  }
+}
